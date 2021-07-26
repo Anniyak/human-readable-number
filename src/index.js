@@ -7,9 +7,6 @@ module.exports = function toReadable (number) {
     +n>19 ? (number>99?" ":"")+getDozen(+n[0]) + (+n[1]>0? " "+getUnit(+n[1]):""): 
         +n>9 ? (number>99?" ":"")+getFirstDozen(+n[1]): 
             n[0]!=0 ? (number>9?" ":"")+getUnit(+n[0]):"";
-
-    
-
     return answer;  
 }
 
